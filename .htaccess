@@ -1,0 +1,28 @@
+
+# ErrorDocument 404 https://admin.copaconsulado.com/404/
+# ErrorDocument 500 https://admin.copaconsulado.com/500/
+# Disable MultiViews
+Options -MultiViews
+
+RewriteEngine On
+# RewriteCond %{REQUEST_URI} ^/404/$
+# RewriteRule ^(.*)$ /404.php [L]
+
+# RewriteCond %{REQUEST_URI} ^/500/$
+# RewriteRule ^(.*)$ /500.php [L]
+
+RewriteRule ^t/(.*)$ tournament.php?uuid=$1 [L]
+RewriteRule ^team/(.*)$ team.php?id=$1 [L]
+RewriteRule ^d/([^/]+)/([^/]+)$ division.php?uuid=$1&div=$2 [L]
+RewriteRule ^e/([^/]+)/([^/]+)/([^/]+)$ edit.php?uuid=$1&div=$2&cat=$3 [L]
+RewriteRule ^c/([^/]+)/([^/]+)/([^/]+)$ clasif.php?uuid=$1&div=$2&cat=$3 [L]
+RewriteRule ^cal/([^/]+)/([^/]+)$ calendar.php?uuid=$1&div=$2 [L]
+RewriteRule ^shared/api/([^/]+)/([^/]+)/([^/]+)$ shared/api.php?uuid=$1&cat=$2&type=$3 [L]
+RewriteRule ^reg/([^/]+)$ registro.php?slug=$1 [L]
+RewriteRule ^ted/([^/]+)$ tedit.php?id=$1 [L]
+RewriteRule ^v/([^/]+)$ view.php?id=$1 [L]
+RewriteRule ^api/([^/]+)/([^/]+)$ api.php?uuid=$1&div=$2 [L]
+
+# General extensionless ".php" URLs
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule (.*) $1.php [L] 

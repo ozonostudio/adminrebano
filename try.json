@@ -1,0 +1,109 @@
+{
+    "schedule": [
+      {
+        "group": "A",
+        "rounds": [
+            [
+                [
+                    { "team": "Toluca", "teamid": 2},
+                    { "team": "Necaxa", "teamid": 3 }
+                ],
+                [
+                    { "team": "Cruz Azul", "teamid": 4 },
+                    { "team": "America", "teamid": 5 }
+                ]
+            ],
+            [
+                [
+                    { "team": "Toluca", "teamid": 2},
+                    { "team": "Cruz Azul", "teamid": 4 }
+                ],
+                [
+                    { "team": "Necaxa", "teamid": 3 },
+                    { "team": "America", "teamid": 5 }
+                ]
+            ],
+            [
+                [
+                    { "team": "Necaxa", "teamid": 3 },
+                    { "team": "Cruz Azul", "teamid": 4 }
+                ],
+                [
+                    { "team": "America", "teamid": 5},
+                    { "team": "Toluca", "teamid": 2 }
+                ]
+            ]
+        ]
+      },
+      {
+        "group": "B",
+        "rounds": [
+            [
+                [
+                    { "team": "Santos Laguna", "teamid": 6},
+                    { "team": "Monterrey", "teamid": 7 }
+                ],
+                [
+                    { "team": "Chivas", "teamid": 8 },
+                    { "team": "Pumas", "teamid": 25 }
+                ]
+            ],
+            [
+                [
+                    { "team": "Santos Laguna", "teamid": 6},
+                    { "team": "Chivas", "teamid": 8 }
+                ],
+                [
+                    { "team": "Monterrey", "teamid": 7 },
+                    { "team": "Pumas", "teamid": 25 }
+                ]
+            ],
+            [
+                [
+                    { "team": "Monterrey", "teamid": 7 },
+                    { "team": "Chivas", "teamid": 8 }
+                ],
+                [
+                    { "team": "Pumas", "teamid": 25 },
+                    { "team": "Santos Laguna", "teamid": 6}
+                ]
+            ]
+        ]
+      },
+      {
+        "group": "C",
+        "rounds": [
+            [
+                [
+                    { "team": "Neza", "teamid": 9},
+                    { "team": "Puebla", "teamid": 11 }
+                ],
+                [
+                    { "team": "Queretaro", "teamid": 24},
+                    { "team": "Atlas", "teamid": 26 }
+                ]
+            ],
+            [
+                [
+                    { "team": "Neza", "teamid": 9},
+                    { "team": "Queretaro", "teamid": 24 }
+                ],
+                [
+                    { "team": "Puebla", "teamid": 11},
+                    { "team": "Atlas", "teamid": 26 }
+                ]
+            ],
+            [
+                [
+                    { "team": "Puebla", "teamid": 11 },
+                    { "team": "Queretaro", "teamid": 24 }
+                ],
+                [
+                    { "team": "Atlas", "teamid": 26},
+                    { "team": "Neza", "teamid": 9 }
+                ]
+            ]
+        ]
+      }
+    ]
+  }
